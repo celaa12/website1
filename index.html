@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+    <html>
+    <html lang="en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Picerija MASTEROS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="stylesheet" href="kontakt.html">
+    </head>
+    <body>
+        <header>
+            <div class="naslov">Picerija GOON</div>
+            <nav class="nav">
+                <a href="#Pocetna">Pocetna</a>
+                <a href="#Meni">Meni</a>
+                <a href="#O-nama">O nama</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+            <a href="kontakt.html" class="order" id="naruci">Naruci Sad</a>
+                
+            </div>
+
+        </header>
+
+        <!--HERO SEKCIJA-->
+        <section class="hero" id="Pocetna">
+            <div class="hero-sadrzaj">
+                <h1>
+                    Pizza napravljena sa puno ljubavi!
+                </h1>
+                <p>
+                Osetite pravi italijanski ukus pizze koja je napravljena sa puno ljubavi
+                </p>
+                <div class="kol">
+                <a href="#Meni" class="order" id="kol2">Meni</a>
+                </div>
+
+                <img src="images/realistic-pizza-vector-illustration-concept_1253202-68387 (2)-Photoroom.png" alt="Pizza">
+            </div>
+        </section>
+        
+
+        <!--Meni Sekcija-->
+        
+        <section class="meni" id="Meni">
+            <h2>Nas Meni</h2>
+                <div class="meni-filteri">
+                    <button class="filter-btn active" data-filter="all">Sve</button>
+                    <button class="filter-btn" data-filter="pizza">Pice</button>
+                    <button class="filter-btn" data-filter="pastas">Paste</button>
+                </div>
+                
+            <div class="menu-grid">
+                <div class="menu-card" data-category="pizza">
+                    <img src="/images/PIZZA-MARGHERITA.jpg" height="300px" width="300px">
+                    <h3>Klasicna Margarita</h3>
+                    <p>San Marzano Paradajz, sveza mocarela,<br> basil</p>
+                    <div class="price">$14.99</div>
+                </div>
+
+                <div class="menu-card" data-category="pizza">
+                    <img src="/images/Quick-and-Easy-Pepperoni-Pizza-700x700.jpeg" height="300px" width="300">
+                    <h3>Peperoni Pizza</h3>
+                    <p>Peperoni pizza sa domacim kulenom</p>
+                    <div class="price">$14.99</div>
+                </div>
+                
+                <div class="menu-card" data-category="pastas">
+                    <img src="/images/3975.webp" height="300px" width="300px">
+                    <h3>Pasta sa sirom</h3>
+                    <p>Pasta, sir, basil</p>
+                    <div class="price">$9.99</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Karakteristike-->
+
+        <section class="karak" id="O-nama">
+            <div class="karak-grid">
+                <div class="karak-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Peceno na drva</h3>
+                    <p>Tradicijalno pecenje pice na drva sa 485°C</p>
+                </div>
+
+                <div class="karak-card">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h3>Domaci sastojci</h3>
+                    <p>Pica napravljena sa domacim uzgajanim sastojcima</p>
+                </div>
+
+                <div class="karak-card">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Brza dostava</h3>
+                    <p>Najbrza dostava u okrugu</p>
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <!--Ocene-->
+
+        <section class="ocena" id="ocena">
+            <h2>Sta nasi gosti kazu</h2>
+            <div class="ocena-grid">
+                <div class="ocena-card">
+                    <h3>Barnix Motikas</h3>
+                    <img class="slika" src="/images/artworks-9FlRMFEaq7G9yMa2-JC8wrg-t500x500.jpg" height="100px" width="100px">
+                    <p>"Toliko je dobro da sam poceo da goonam!"</p>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <!--Footer-->
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-col"> 
+                    <p>&copy 2025 Picerija GOON. Sva prava zadrzana</p>
+                    
+                </div>
+
+                <div class="footer-slike">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+            </div>
+
+
+        </footer>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+<script>
+    function ucitajKontakt() {
+      fetch('kontakt.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('sadrzaj').innerHTML = data;
+        })
+        .catch(error => {
+          document.getElementById('sadrzaj').innerHTML = 'Greška pri učitavanju kontakt forme.';
+          console.error(error);
+        });
+    }
+</script>

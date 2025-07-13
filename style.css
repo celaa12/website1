@@ -1,0 +1,409 @@
+body{
+                background-color: #F4F1DE;
+                overflow-x: hidden;
+                margin: 0;
+                padding: 0;
+                
+}
+
+
+            header{
+                position: fixed;
+                top: 0;
+                padding: 24px 5%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1000;
+                width: 100%;
+                backdrop-filter: blur(10px);
+                background: #F4F1DE;
+                
+                
+    
+}
+
+            .naslov{
+                font-weight: 700;
+                color: tomato;
+                font-size: 40px;
+                float: left;
+            }
+
+            .nav{
+                display: flex;
+                gap: 2rem;
+                position: relative;
+                
+            }
+
+            .nav a{
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                font-weight: 5100;
+                transition: color 0.3s;
+                font-size: 23px;
+                position: relative;
+                left: -100px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .nav a:hover{
+                color: tomato;
+                text-decoration: underline;
+            }
+            .order{
+                background-color: tomato;
+                border-radius: 30px;
+                border: none;
+                cursor: pointer;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 200;
+                width: 90px;
+                justify-content: center;
+                align-items: center;   
+                width: 150px;  
+                font-size: 16px;    
+                position: relative;
+                white-space: nowrap;
+                display: flex;
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 20px 20px 20px 20px; 
+                transition: transform 0.3s;
+                top: 310px;
+                
+              
+            }
+            .kol a{
+                text-decoration: none;
+
+            }
+            #kol2{
+                width: 100px;
+            }
+
+            #naruci{
+                position: relative;
+                top: 0px;
+                right: 120px;
+                text-decoration: none;
+                width: 110px;
+            }
+            .hero-sadrzaj button{
+                transition: transform 0.3s
+            }
+           
+            .order:hover{
+                transform: scale(1.03);
+                
+                
+            }
+            .order a{
+                color: white;
+                text-decoration: none;
+            }
+            .order a:hover{
+                color: black;
+            }
+            
+
+            /*Hero*/
+            .hero{
+                min-height: 100vh;
+                padding: 8rem;
+                display: grid;
+                align-items: center;
+                gap: 4rem;
+                grid-template-columns: 1fr 1fr;
+                position: relative;
+                top: -80px;
+                
+                
+            }
+            .hero img{
+                position: relative;
+                height: 600px;
+                left: 750px;
+                top: -200px;
+                transform-origin: center center;
+                display: block;
+            }
+            .hero img:hover{
+                transform: scale(1.05);  
+
+            }
+            .hero img{
+                width: 100%;
+                object-fit: cover;
+                transition: transform 0.3s;
+            }
+            .hero-sadrzaj h1 {
+                position:relative;
+                top: 260px;
+                font-weight: 2000;
+                font-weight: bold;
+                font-size: 75px;
+                display: inline;
+                max-width: 200px;
+                color: rgb(32, 32, 32);
+                
+            }
+            .hero-sadrzaj p{
+                position: relative;
+                top: 290px;
+                font-size: 22px;
+                color: black;
+            } 
+            .hero-sadrzaj button{
+                position: relative;
+                top: 300px;
+                width: 100px;
+                left: auto;
+                font-size: 16px;
+            }
+
+            /*Meni*/
+            
+            .meni{
+                padding: 6rem 60px;
+                background-color: rgb(255, 255, 255);
+                background-size: cover;
+            }
+            .meni h2{
+                text-align: center;
+                font-size: 2.5rem;
+                color: rgb(53, 53, 53);
+                margin-bottom: 2rem;
+            }
+            .meni-filteri{
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+                margin-bottom: 3rem;
+            }
+            .filter-btn{
+                background: transparent;
+                border: 2px, solid, tomato;
+                padding: 0.8rem 2rem;
+                border-radius: 30px;
+                cursor: pointer;
+                transition: all 0.3s;
+                
+            }
+            .filter-btn:hover{
+                background-color: tomato;
+                color: white;
+                text-decoration: underline;
+                font-weight: 1500;
+            }
+            .menu-grid {
+                display: flex;
+                gap: 8rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .menu-card{
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgb(0, 0, 0, 0.1);
+                background-color: white;
+                
+                
+            }
+            
+            .menu-card img{
+                object-fit: cover;
+                
+                
+            }
+            .menu-card h3, p{
+                padding-left: 1.5rem;
+                padding-top: 1rem;
+            }
+            
+           
+           .menu-card p{
+            margin: 0;
+           }
+           .menu-card h3{
+            margin: 0;
+            font-size: larger;
+           }
+           .menu-card div{
+            margin: 0;
+           }
+            .price{
+                font-weight: bold;
+                padding-left: 1.5rem;
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+                color: tomato;
+            }
+            .menu-card:hover{
+                transform: scale(1.05);
+            }
+            .menu-card{
+                transition: transform 0.3s;
+            }
+            
+
+            /*Karakteristike*/
+            .karak{
+                padding: 6rem 50px;
+                background-color: #81B29A ;
+                color: white;
+                height: 250px;
+            }
+            .karak-grid{
+                display: flex;
+                grid-template-columns: repeat(auto-fit, minimax(250px, 1fr));
+                gap: 3rem;
+                text-align: center;
+                justify-content: center;
+            }
+            .karak-card{
+                background: rgba(255, 255, 255, 0.1);
+                padding: 1.5rem;
+                border-radius: 15px;
+                width: 400px;
+                
+
+            }
+            .karak-card h3{
+                font-weight: bold;
+                font-size: 22px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .karak-card p{
+                font-size: 17px;
+                text-align: center;
+                margin-right: 23px;
+            }
+
+            .karak-card i{
+                font-size: 48px;
+                color: orangered;
+            }
+
+            /*ocene*/
+
+            .ocena{
+                padding: 6rem 5%;
+                background-color: white;
+                text-align: center;
+            }
+          .ocena-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+          }
+
+            .slika{
+                border-radius: 50%;
+                margin-bottom: 0.5rem;
+            }
+            .ocena h2{
+                font-size: 35px;
+                position: relative;
+                top: -70px;
+            }
+        .ocena-card{
+            background: #F4F1DE;
+            display: flexbox;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgb(0, 0, 0, 0.1);
+            height: 300px;
+        }
+        .ocena-card h3{
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-bottom: 1.6rem;
+        }
+        .ocena-card p{
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /*footer*/
+        footer{
+            
+            height: 80px;
+            color: rgb(78, 76, 76);
+            font-weight: 0;
+            text-align: center;
+        }
+        .footer-content a{
+            text-decoration: none;
+            padding: 10px;
+            position: relative;
+            color: black;
+        }
+
+        /*forma*/
+
+        .forma-input{
+            position: relative;
+            top: 150px;
+            padding: 1.5rem;
+            
+            
+        }
+        .forma-input h1{
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .forma-input input{
+            width: 500px;
+            height: 35px;
+        }
+        .forma-input label{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        #poruka{
+            position: relative;
+            left: 900px;
+            top: -295px;
+        }
+        #ime{
+            position: relative;
+            left: 270px;
+        }
+        #broj{
+            position: relative;
+            left: 270px;
+        }
+        #email{
+            position: relative;
+            left: 270px;
+        }
+        textarea{
+            height: 232px;
+        }
+        
+        .button{
+            width: 150px;
+            height: 55px;
+            background: red;
+            font-weight: bol;
+            color: white;
+            font-size: 16px;
+            position: relative;
+            top: -200px;
+            left: 390px;
+            border: none;
+            border: 1px solid lightgray;
+           
+        }
+        
+        .mango{
+            position: relative;
+            top: 100px;
+        }
